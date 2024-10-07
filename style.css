@@ -52,6 +52,7 @@ body {
 .C {
     color: #f92100;
 }
+
 /* HEADER */
 
 .logo a img {
@@ -59,7 +60,11 @@ body {
 }
 
 header {
-    margin: 4vh 4%;
+    padding: 4vh 4%;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    z-index: 77;
 }
 
 header > .container {
@@ -191,6 +196,7 @@ section.topodosite .flex{
     align-items: center;
     justify-content: center;
     gap: 9vw;
+    margin-top: 12vh;
 }
 
 .topodosite h1 {
@@ -458,10 +464,22 @@ footer p a i {
         flex-direction: column;
     }
 
+    button {
+        user-select: none; /* Para navegadores modernos */
+        -webkit-user-select: none; /* Para Safari */
+        -moz-user-select: none; /* Para Firefox */
+        -ms-user-select: none; /* Para Internet Explorer/Edge */
+        touch-action: manipulation; /* Impede ações padrão como seleção */
+    }
+
     /* topo do site */
 
     .topodosite .flex {
         flex-direction: column-reverse;
+    }
+
+    header {
+        padding: 1vh 4%;
     }
 
     .pediai {
@@ -512,6 +530,10 @@ footer p a i {
         height: 55vh;
         margin-left: 4vw;
         margin-top: 3vh;
+    }
+
+    .melt {
+        text-align: center;
     }
 
     /* formulario */
