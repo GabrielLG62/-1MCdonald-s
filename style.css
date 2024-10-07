@@ -464,9 +464,16 @@ footer p a i {
         flex-direction: column;
     }
 
-    button, input, textarea {
+    button, input, textarea, a {
+        user-select: none; /* Para navegadores modernos */
+        -webkit-user-select: none; /* Para Safari */
+        -moz-user-select: none; /* Para Firefox */
+        -ms-user-select: none; /* Para Internet Explorer/Edge */
         -webkit-tap-highlight-color: transparent;
+        outline: none;
+        box-shadow: none;
     }
+    
 
     /* topo do site */
 
