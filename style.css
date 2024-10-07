@@ -464,13 +464,8 @@ footer p a i {
         flex-direction: column;
     }
 
-    button {
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        touch-action: manipulation;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    button, input, textarea {
+        -webkit-tap-highlight-color: transparent;
     }
 
     /* topo do site */
