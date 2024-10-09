@@ -7,6 +7,18 @@
     scroll-behavior: smooth;
 }
 
+#pedir {
+    scroll-margin-top: 10vh;
+}
+
+#lan {
+    scroll-margin-top: 15vh;
+}
+
+#contato {
+    scroll-margin-top: 15vh;
+}
+
 body {
     background-color: rgb(34, 34, 34);
     color: #FFF;
@@ -548,6 +560,10 @@ footer p a i {
     /* formulario */
     form .btn-enviar input {
         width: 30vw;
+    }
+
+    #contato {
+        scroll-margin-top: 8vh;
     }
 
     /* footer */
